@@ -33,7 +33,7 @@ default.elasticsearch[:pid_path]  = "/usr/local/var/run/elasticsearch"
 #
 max_mem = "#{(node.memory.total.to_i - (node.memory.total.to_i/3) ) / 1024}m"
 default.elasticsearch[:min_mem]  = "128m"
-default.elasticsearch[:max_mem]  = max_mem
+default.elasticsearch[:max_mem]  = "128m"
 default.elasticsearch[:mlockall] = true
 
 # === LIMITS ===
